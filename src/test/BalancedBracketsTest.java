@@ -27,7 +27,13 @@ public class BalancedBracketsTest {
     }
 
     @Test
-    public void mismatchedBracketsReturnsFalse() {
+    public void mismatchedBracketsReturnsFalseOne() {
+        BalancedBrackets test_Class = new BalancedBrackets();
+        assertFalse(test_Class.hasBalancedBrackets("[hello}"));
+    }
+
+    @Test
+    public void mismatchedBracketsReturnsFalseTwo() {
         BalancedBrackets test_Class = new BalancedBrackets();
         assertFalse(test_Class.hasBalancedBrackets("]"));
     }
